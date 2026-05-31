@@ -1,0 +1,17 @@
+
+
+services:
+  pedidos:
+    build: ./pedidos
+    ports:
+      - "3001:3000"
+
+  pagamento:
+    build: ./pagamento
+    ports:
+      - "3002:3000"
+
+  estoque:
+    build: ./estoque
+    ports:
+      - "3003:3000"
